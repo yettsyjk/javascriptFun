@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script>
+  function calcFunc(){
+    //value from first text box
+    let a = document.getElementById('input1Id').value;
+   //value from first text box
+    let b = document.getElementById('input2Id').value;
+  //result will be added values from first and second text box
+    let result = parseFloat(a) + parseFloat(b);
+    document.write(result);
+}
+</script>
+</head>
+<body>
+  <h>Simple Calculator</h>
+  <p>Enter values int the textbox and pres the button to see the result</p>
+  
+<input type="textbox" name="input1" id="input1Id"/>
+  <p>+</p>
+  <input type="textbox" name="input2" id="input2Id"/>
+  
+  <input type="submit" name="calculate" id="calculateButton" onClick="calcFunc()" value="Calc"/>
+
+
+</body>
+</html>
